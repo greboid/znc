@@ -1,6 +1,6 @@
-FROM alpine:edge
+FROM registry.greboid.com/mirror/alpine:edge
 
-RUN apk add znc=1.8.2-r1 znc-extra=1.8.2-r1 ca-certificates && mkdir /znc && chown guest /znc
+RUN apk add znc=1.8.2-r3 znc-extra=1.8.2-r3 ca-certificates && mkdir /znc && chown guest /znc
 USER guest
 ENV HOME /znc
 
