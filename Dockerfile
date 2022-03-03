@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-RUN apk add znc=1.8.2-r5 znc-extra=1.8.2-r5 ca-certificates && mkdir /znc && chown guest /znc
+RUN apk add znc znc-extra ca-certificates && mkdir /znc && chown guest /znc
 USER guest
 ENV HOME /znc
 
