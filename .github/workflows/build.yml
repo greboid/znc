@@ -1,5 +1,8 @@
 name: build
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: '33 12 * * *'
   push:
     branches:
       - master
